@@ -1,17 +1,100 @@
 // Automatically injected Bower dependencies via wiredep (never manually edit this block)
 // bower:less
-@import "../../bower_components/bootstrap/less/bootstrap.less";
 // endbower
 
-@import "common/_variables";
-@import "common/_global";
-@import "components/_buttons";
-@import "components/_comments";
-@import "components/_forms";
-@import "components/_grid";
-@import "components/_wp-classes";
-@import "layouts/_header";
-@import "layouts/_sidebar";
-@import "layouts/_footer";
-@import "layouts/_pages";
-@import "layouts/_posts";
+body {
+  margin: 0;
+  font-family: "Roboto Slab";
+  background: #222;
+}
+
+.top-bar {
+  background: #222;
+  color: white;
+  height: 50px;
+  box-sizing: border-box;
+  padding: 15px 0;
+}
+
+.top-bar .nav {
+  float: left;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.top-bar ul {
+  margin: 0 0 0 32px;
+}
+
+.nav {
+  list-style-type: none;
+  padding: 0;
+}
+
+.nav li {
+  display: inline;
+  padding: 0 8px;
+  border-right: 1px dotted white;
+}
+
+.nav a:hover {
+  color: #CAC9ED;
+}
+
+.nav li:last-child {
+  border-right: none;
+}
+
+.site-header {
+  background: #ddd;
+  height: 128px;
+  box-sizing: border-box;
+  padding: 24px 32px;
+}
+
+.site-header h1, .site-header h3 {
+  margin-top: 0;
+  margin-bottom: 0px;
+}
+
+.site-footer .nav a {
+  color: #ddd;
+  font-weight: 100;
+}
+
+.site-footer {
+  text-align: center;
+  font-size: 9pt;
+  color: white;
+}
+
+.logo {
+  max-height: 80px;
+  width: auto;
+  float: left;
+  margin-right: 24px;
+}
+
+.container {
+  max-width: 1024px;
+  margin: auto;
+}
+
+.wrapper {
+  background: white;
+  padding-bottom: 200px;
+  padding-top: 25px;
+  box-sizing: border-box;
+}
+
+.page-header h1 {
+  margin-top: 0;
+}
+
+.search-form {
+  float: right;
+}
